@@ -13,10 +13,10 @@ function calculateScore() {
     for (let value of formResults.values()) {
         if (value === rightAnswers[index]) {
             score = score + 1;
-            index = index + 1;
+            
            
         }
-
+        index = index + 1;
     }
     message.innerText = `Your score is ${score}`;
     if (score === 0 ) {

@@ -3,7 +3,7 @@ const submit = document.querySelector("#submit-button");
 const message = document.querySelector("#output-msg");
 
 
-const rightAnswers = ["90°", "right angled"];
+const rightAnswers = ["90°", "right angled", "A geometric figure", "Polygon", "3", "Equilateral", "Geometry", "2", "Scalene", "3"];
 
 
 function calculateScore() {
@@ -12,11 +12,17 @@ function calculateScore() {
     const formResults = new FormData(quizForm);
     for (let value of formResults.values()) {
         if (value === rightAnswers[index]) {
-            score = score+1;
+            score = score + 1;
+            index = index + 1;
+           
         }
-        index = index+1;
+
     }
-     message.innerText = `Your score is ${score}`;
+    message.innerText = `Your score is ${score}`;
+    if (score === 0 ) {
+        message.innerText = `Please do attempt all questions`;
+
+    }
 }
 
 submit.addEventListener("click", calculateScore);

@@ -9,12 +9,15 @@ function squareOfSides(a, b) {
 }
 
 function calculateHypotenuse() {
-       if(sides){
+    if (sides>0) {
         const sumSquare = squareOfSides(Number(sides[0].value), Number(sides[1].value));
         const hypo = Math.sqrt(sumSquare);
         message.innerText = `The lenght of the Hypotenuse with the entered values is ${hypo}`;
-    
-       }
+
+    }else{
+        message.innerText = `Please enter valid values`;
+
+    }
 
 }
 

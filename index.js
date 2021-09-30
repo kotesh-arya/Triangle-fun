@@ -21,14 +21,15 @@ function isTriangleWithSum() {
 
 function sumOfAngles(initial, mid, final) {
     var sum = initial + mid + final;
-    if (sum) {
+
+    if (initial>0 && mid>0 && final > 0) {
         if (sum === 180) {
             showMessage('Hey ! that forms a triangle');
         } else {
             showMessage("Sorry boss! that is not a triangle");
         }
     } else {
-        showMessage("Please enter some values!");
+        showMessage("Please enter valid values!");
     }
 }
 

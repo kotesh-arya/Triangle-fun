@@ -16,7 +16,7 @@ function calculateHypotenuse() {
       if(base>0 && perpendicular>0){
         const sumSquare = squareOfSides(base, perpendicular);
         const hypo = Math.sqrt(sumSquare);
-        message.innerText = `The lenght of the Hypotenuse with the entered values is ${hypo.toFixed(2)}`;
+        message.innerText = `The length of the Hypotenuse with the entered values is ${hypo.toFixed(2)}`;
 
     
       }else{

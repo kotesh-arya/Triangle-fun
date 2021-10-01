@@ -10,12 +10,18 @@ function squareOfSides(a, b) {
 
 function calculateHypotenuse() {
     
+    var base = Number(sides[0].value);
+    var perpendicular=Number(sides[1].value);
 
-        const sumSquare = squareOfSides(Number(sides[0].value), Number(sides[1].value));
+      if(base>0 && perpendicular>0){
+        const sumSquare = squareOfSides(base, perpendicular);
         const hypo = Math.sqrt(sumSquare);
-        message.innerText = `The lenght of the Hypotenuse with the entered values is ${hypo}`;
+        message.innerText = `The lenght of the Hypotenuse with the entered values is ${hypo.toFixed(2)}`;
 
     
+      }else{
+        message.innerText = `Input Error: Please Enter valid values in all the fields!`;
+      }
 
 }
 

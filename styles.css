@@ -1,8 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+body{
+    background-color: #e7ebf1;
+    font-family: 'Play', sans-serif;
+        font-size: 22px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      
+}
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: -4px -4px 5px #ffffff, 4px 4px 15px #000000;
+    border-radius: 30px;
+    width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
 }
 label, input,button{
     margin: 5px;
@@ -10,10 +31,74 @@ label, input,button{
 
 .quiz-form{
     display: flex;
-    align-items: left;
     justify-content: center;
     flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: -4px -4px 5px #ffffff, 4px 4px 15px #000000;
+    border-radius: 30px;
+    width: 500px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 #submit-button{
-margin: 25px;
+margin-left: auto;
+margin-right: auto;
+padding: 20px;
+font-size: 20px;
+font-family: 'Play', sans-serif;
 }
+#output-msg{
+    margin-left: auto;
+margin-right: auto;
+}
+h1{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    background-color: rgb(19, 19, 248);
+    height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+nav a:checked{
+    background-color: blue;
+    color: black;
+}
+
+
+.footer{
+    text-align: center;
+    background-color: rgb(7, 22, 226);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    height: 100px;
+    color: white;
+  }
+  .social-media{
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      padding-bottom: 0px;
+  }
+  .icons{
+      height: 50px;
+      margin: 10px;
+  }
+  .footer p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
